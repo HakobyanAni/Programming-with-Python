@@ -55,3 +55,13 @@ print(var)       # I am 10 years old
 
 var = '{} = {}'.format("sqrt of 4", 2)
 print(var)       # sqrt of 4 = 2
+
+
+# conditional operator with strings
+string_1 = int(input())
+
+if string_1 is not None or string_1 != '':
+        pass
+        # the same as
+if string_1:
+        pass

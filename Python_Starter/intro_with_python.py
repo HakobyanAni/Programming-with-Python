@@ -19,3 +19,9 @@ else:
     result = "Not supported operation."
 
 print(result)
+
+
+# ternar operator
+is_ready = True
+message = "ready" if is_ready else "not ready yet"
+print(message)
