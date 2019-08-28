@@ -13,19 +13,19 @@ def personal_info(first_name = 'Helen', last_name='Pitt', age=15):
     print('age: ', age, sep='\t')
 
 # 1st version
-print(personal_info('John', 'Lenon', 25))
+personal_info('John', 'Lenon', 25)
 
 # 2nd version
-print(personal_info(
+personal_info(
      first_name='Teo',
      last_name='Brown',
-      age=30,))
+      age=30,)
 
 # 3rd version
-print(personal_info(first_name='Joseph', age=35, last_name='Morgan'))
+personal_info(first_name='Joseph', age=35, last_name='Morgan')
 
 # 4th version
-print(personal_info())
+personal_info()
 
 # 5th version
-print(personal_info(last_name='Kayer', first_name='Nahi'))
+personal_info(last_name='Kayer', first_name='Nahi')
