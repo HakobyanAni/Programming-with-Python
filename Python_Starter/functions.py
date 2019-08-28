@@ -7,7 +7,7 @@ def print_odd_numbers(from_numb, to_numb):
 print_odd_numbers(3, 15)
 
 
-# define a function which calculates factorial
+# define a function which calculates factorial of a given number
 def numb_factorial(number):
     factorial = 1
     while(number > 0):
