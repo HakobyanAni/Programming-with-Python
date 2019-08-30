@@ -41,7 +41,7 @@ print(new_list)           # [1, 5, 7, 8, 0, 3, 100]
 
 for element in new_list:
     if element % 2 == 0:
-        print("even number -  ", new_list[element])    
+        print("even number -  ", element)    
     else:
         print("odd number -  ", element)         
 
