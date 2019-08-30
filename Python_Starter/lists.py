@@ -21,6 +21,14 @@ print(sub_list_5)        # [7, 0]
 print(sub_list_6)        # [1, 5, 7, 8]
 print(sub_list_7)        # [3, 8, 5]
 
+list_1 = [a, b, c]
+list_2 = list_1          # list_1 and list_2 have references to same object
+print(list_1)            # [a, b, c]
+print(list_2)            # [a, b, c]
+list_1.append(z)
+print(list_1)            # [a, b, c, z]
+print(list_2)            # [a, b, c, z]
+
 print(len(new_list))     # 6 - length of list
 
 variable = 1
