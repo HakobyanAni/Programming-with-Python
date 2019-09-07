@@ -21,7 +21,7 @@ numb_factorial(3)    # 6
 
 
 
-# In Python all numbers are reference types
+# In Python all types are reference types
 x = 7        # creates an object for 7 in memory
 print(x)     # 7
 print(id(x)) # 1403872528   - address in memory
