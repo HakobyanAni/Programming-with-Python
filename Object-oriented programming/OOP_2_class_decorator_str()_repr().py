@@ -46,16 +46,12 @@ main()
 
 
 ###     _str_()
-
 # This method returns the string representation of the object. This method is called
 # when print() or str() function is invoked on an object. This method must return the
 # String object. If we don’t implement __str__() function for a class, then built-in
 # object implementation is used that actually calls __repr__() function.
 
-
-
 ###     _repr_()
-
 # Python __repr__() function returns the object representation. It could be any valid
 # python expression such as tuple, dictionary, string etc. This method is called when 
 # repr() function is invoked on the object, in that case, __repr__() function must return 
