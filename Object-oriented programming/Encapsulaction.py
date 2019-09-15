@@ -1,5 +1,4 @@
 class Car:
-
     def __init__(self):
         self.__private_attribute = 42   # private attribute starts with two underlines
 
