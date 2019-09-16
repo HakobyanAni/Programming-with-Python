@@ -20,12 +20,12 @@ class Shape:
 
 class Square(Shape):
     def draw(self):
-        for i in range(self.side):
+        for el in range(self.side):
             print('+ ' * self.side)
 
 class Triangle(Shape):
     def draw(self):
-        for i in range(1, self.side + 1):
+        for el in range(1, self.side + 1):
             print('+ ' * i)
 
 # -> Multiple inheritance is allowed.
