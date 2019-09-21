@@ -26,7 +26,7 @@ class Square(Shape):
 class Triangle(Shape):
     def draw(self):
         for el in range(1, self.side + 1):
-            print('+ ' * i)
+            print('+ ' * el)
 
 # -> Multiple inheritance is allowed.
 class Bird:
