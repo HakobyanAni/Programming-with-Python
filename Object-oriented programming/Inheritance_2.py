@@ -1,5 +1,4 @@
 # Another way to show base class and child class relations
-
 class BaseClass(object):
     def descript_class(self):
         print("Method's class", __class__.__name__)
@@ -67,6 +66,8 @@ if __name__=='__main__':
     animal_3 = Pegasus()
     animal_3.print_abilities()
 
+    print(Pegasus.__bases__)
+
 # Hourse
 # can run -  True
 # can fly -  False
@@ -78,3 +79,23 @@ if __name__=='__main__':
 # Pegasus
 # can run -  True
 # can fly -  True
+
+# (<class '__main__.Hourse'>, <class '__main__.Bird'>)
+
+
+
+###      issubclass(cls, base)    ###     isinstance(obj, cls)
+
+print(isinstance(1, int))          # true
+print(isinstance(bool, int))       # false
+print(isinstance('sdv', object))   # true
+print(isinstance(1, str))          # false
+print(isinstance(True, int))       # true
+
+print(issubclass(bool, int))       # true 
+print(issubclass(bool, str))       # false
+print(issubclass(Bird, object))    # true
+print(issubclass(str, str))        # true
+
+###      Class.__bases__
+print(bool.__bases__)              # (<class 'int'>,)
