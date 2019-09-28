@@ -43,3 +43,56 @@ del obj_1                                    # <__main__.MySampleClass object at
                                              # Exception ignored in: ..... info about exception
 
 print('Done.')                               # Done.
+
+
+
+def main():
+    try:
+        raise ValueError('value is not correct.')
+    except ValueError as error:
+        print('Exception:', error)
+        raise
+ 
+try: 
+    main()
+except ValueError:
+    print('Detected value error.')
+
+# Exception: value is not correct.
+# Detected value error.
+
+
+
+### __context__  (keeps old exception)
+value_error = ValueError()
+value_error.__context__ = ZeroDivisionError()
+exception = Exception()
+exception.__context__ = value_error
+raise exception
+
+# ZeroDivisionError
+# During handling of the above exception, another exception occurred:
+# ValueError
+# During handling of the above exception, another exception occurred:
+# ............
+#     raise exception
+# Exception
+
+
+
+###  __cause__
+a = 5
+b = 0
+try:
+    result = a / b
+except ZeroDivisionError as error:
+   raise ValueError('value is not correct') from error
+   # raise ValueError('cannot divide number on zero') from None  -in thos case we can't have any information about old exception
+
+# ....
+#     result = a / b
+# ZeroDivisionError: division by zero
+# The above exception was the direct cause of the following exception:
+# ............
+#  raise ValueError('value is not correct') from error
+# ValueError: value is not correct
