@@ -97,4 +97,6 @@ except ZeroDivisionError as error:
 #  raise ValueError('value is not correct') from error
 # ValueError: value is not correct
 
+
+
 # The base class of all exceptions in Python is BaseException class.
